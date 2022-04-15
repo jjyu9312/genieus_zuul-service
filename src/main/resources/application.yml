@@ -1,0 +1,15 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: genieus-zuul-service
+
+zuul:
+  routes:
+    Service-1ND:
+      path: /Service_1ND/**
+      url: http://localhost:8081
+    Service-2ST:
+      path: /Service_2ST/**
+      url: http://localhost:8082
